@@ -89,7 +89,7 @@ public class EntityWisp extends EntityLiving {
         this.setType(WispType.selector.getRandomEntry().getEntry().ordinal());
 
         final Calendar now = Calendar.getInstance();
-        this.setSpawnDate((byte) now.get(Calendar.DAY_OF_MONTH), (byte) (now.get(Calendar.MONTH) + 1));
+        this.setSpawnDate((byte) now.get(Calendar.DAY_OF_MONTH) - 1, (byte) (now.get(Calendar.MONTH)));
         return livingdata;
     }
     
