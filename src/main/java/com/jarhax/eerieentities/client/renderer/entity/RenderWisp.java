@@ -80,7 +80,7 @@ public class RenderWisp extends Render<EntityWisp> {
         float blue = 1f;
         float alpha = 1;
         
-        float[][] colorTable = colors[entity.getMonth()][entity.getDay()];
+        float[][] colorTable = colors[entity.getMonth() - 1][entity.getDay() - 1];
         
         if (entity.hasCustomName() && ("Jaredlll08".equalsIgnoreCase(entity.getName()) || "Darkhax".equalsIgnoreCase(entity.getName()))) {
             
